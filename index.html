@@ -8,9 +8,55 @@
   </head>
   <body>
     <div class="container">
-      <div class="form-wrapper">
-        <form method="POST"></form>
-      </div>
+      <section class="signup-form">
+        <header>
+          <h1>Welcome to Mailchimp</h1>
+          <p>
+            Find your people. Engage your customers. Build your brand. Do it all
+          </p>
+        </header>
+        <form method="POST">
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="form-element">
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label
+            ><input type="password" id="password" />
+          </div>
+          <ul class="password-criteria">
+            <li>One lowercase character</li>
+            <li>One uppercase character</li>
+            <li>One number</li>
+            <li>One special character</li>
+            <li>8 characters minimum</li>
+          </ul>
+          <div class="form-element">
+            <button>Sign Up</button>
+            <input type="checkbox" name="newsletter" id="newsletter" />
+            <label for="newsletter"
+              >I don't want to receive emails about new Mailchimp products, best
+              practices, or special offers.
+            </label>
+          </div>
+        </form>
+        <footer>
+          <p>
+            By clicking the "Sign Up" button, you are creating a Mailchimp
+            account, and you agree to Mailchimp's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+        </footer>
+      </section>
+      <footer>
+        ©2001–2021 All Rights Reserved. Mailchimp® is a registered trademark of
+        The Rocket Science Group. <a href="#">Cookie Preferences</a>,
+        <a href="#">Privacy</a>, and <a href="#">Terms</a>.
+      </footer>
     </div>
   </body>
 </html>
