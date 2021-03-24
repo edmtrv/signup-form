@@ -1,2 +1,3 @@
-# signup-form
-An example sign up form
+## Sign up form
+
+A clone of a simple sign up form, implemented as an example
