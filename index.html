@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
     <title>Signup</title>
   </head>
   <body>
     <div class="container">
+      <img src="./mc-freddie-dark.svg" alt="Logo" class="logo" />
       <section class="signup-form">
         <header>
           <h1>Welcome to Mailchimp</h1>
           <p>
             Find your people. Engage your customers. Build your brand. Do it all
+            with Mailchimp’s Marketing Platform. Already have an account?
+            <a href="#">Log in</a>
           </p>
         </header>
         <form method="POST">
@@ -28,15 +38,19 @@
             <label for="password">Password</label
             ><input type="password" id="password" />
           </div>
-          <ul class="password-criteria">
-            <li>One lowercase character</li>
-            <li>One uppercase character</li>
-            <li>One number</li>
-            <li>One special character</li>
-            <li>8 characters minimum</li>
-          </ul>
-          <div class="form-element">
-            <button>Sign Up</button>
+          <div class="password-criterias">
+            <ul class="left-list">
+              <li>One lowercase character</li>
+              <li>One uppercase character</li>
+              <li>One number</li>
+            </ul>
+            <ul class="right-list">
+              <li>One special character</li>
+              <li>8 characters minimum</li>
+            </ul>
+          </div>
+          <div class="form-submission">
+            <button disabled class="btn">Sign Up</button>
             <input type="checkbox" name="newsletter" id="newsletter" />
             <label for="newsletter"
               >I don't want to receive emails about new Mailchimp products, best
@@ -52,10 +66,11 @@
           </p>
         </footer>
       </section>
-      <footer>
+      <footer class="page-footer">
         ©2001–2021 All Rights Reserved. Mailchimp® is a registered trademark of
-        The Rocket Science Group. <a href="#">Cookie Preferences</a>,
-        <a href="#">Privacy</a>, and <a href="#">Terms</a>.
+        The Rocket Science Group. <br />
+        <a href="#">Cookie Preferences</a>, <a href="#">Privacy</a>, and
+        <a href="#">Terms</a>.
       </footer>
     </div>
   </body>

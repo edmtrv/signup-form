@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #ffe01b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+  width: 75vw;
+  margin-left: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(19, 133, 153);
+  border-bottom: 1px solid rgb(19, 133, 153);
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+  color: rgb(66, 66, 66);
+  border-bottom-color: rgb(66, 66, 66);
+}
+
+/* FORM */
+
+header a:link,
+header a:visited {
+  border-bottom: none;
+}
+
+.signup-form {
+  max-width: 40%;
+  min-width: 300px;
+}
+
+.signup-form p {
+  font-size: 85%;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 90%;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 10px;
+  margin: 10px 0 20px;
+  font-size: 85%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+input:focus {
+  outline-color: rgb(19, 133, 153);
+}
+
+.password-criterias {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 80%;
+  margin-bottom: 30px;
+}
+
+.password-criterias ul {
+  margin-right: 10%;
+  list-style-position: inside;
+}
+
+.password-criterias li::marker {
+  color: rgb(19, 133, 153);
+}
+
+.form-submission {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: none;
+  margin-right: 5%;
+  padding: 15px 45px;
+  font-size: 80%;
+  border: 1px solid rgb(226, 226, 226);
+  white-space: nowrap;
+}
+
+.form-submission label {
+  margin-left: 10px;
+  font-size: 70%;
+  font-weight: 300;
+}
+
+.signup-form footer {
+  font-size: 90%;
+}
+
+.page-footer {
+  max-width: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 70%;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+}
+
+.page-footer a:link,
+.page-footer a:visited {
+  color: rgb(119, 119, 119);
+  border-bottom: 1px solid rgb(119, 119, 119);
+}
+
+.page-footer a:hover,
+.page-footer a:active {
+  color: rgb(19, 133, 153);
+  border-bottom: 1px solid rgb(19, 133, 153);
+}
